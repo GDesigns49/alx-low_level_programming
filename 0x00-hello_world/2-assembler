@@ -1,2 +1,2 @@
-#!/bin/bashi!
-gcc -S $CFILE
+#!/bin/bash
+gcc -s<F11><F11> $CFILE
