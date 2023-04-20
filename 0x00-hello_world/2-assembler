@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -s<F11><F11> $CFILE
+gcc -S $CFILE
