@@ -6,6 +6,7 @@
  * Return: Always 0 (success)
  */
 
+int main(void)
 {
 
 	int n;
@@ -21,7 +22,7 @@
 	}
 	else
 	{
-		printf("last digit for %d is %d and it is 0\n" n, a);
+		printf("last digit for %d is %d and it is 0\n", n, a);
 	}
 	return (0);
 }

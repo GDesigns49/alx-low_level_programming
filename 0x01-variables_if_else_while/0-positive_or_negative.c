@@ -5,7 +5,6 @@
  * main - Prints when number is positive,  negative or 0
  * Retuuen: Always 0 (success)
  */
-
 int main(void)
 
 {

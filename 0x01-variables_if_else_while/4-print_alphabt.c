@@ -4,12 +4,13 @@
  * Returns: Always 0 (success)
  */
 int main(void)
-
 {
 	char lowerAlph;
-	for (lowerAlph = 'a'; lowerAlph <= 'z'; lowerAlph++);
+
+	for (lowerAlph = 'a'; lowerAlph <= 'z';);
+	lowerAlph++;
 	{
-	if (lowerAlph != 'e' && lowerAlph != 'q')
+	if (lowerAlph != 'e' && lowerAlph != 'q';
 	putchar(lowerAlph);
 	}
 	putchar('\n');
