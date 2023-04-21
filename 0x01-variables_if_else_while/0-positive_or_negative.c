@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include <stdio.h>
-#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 /**
  * main - Prints when number is positive,  negative or 0
  * Retuuen: Always 0 (success)
@@ -15,15 +15,15 @@ int main(void)
 
 	if (n > 0)
 	{
-		prinf("%d is positive\n", n);
+	printf("%d is positive\n", n);
 	}
 	else if (n == 0)
 	{
-		printf("%d is zero\n", n);
+	printf("%d is zero\n", n);
 	}
 	else
 	{
-		printf("%d negative\n", n);
+	printf("%d negative\n", n);
 	}
 	return (0);
 }
