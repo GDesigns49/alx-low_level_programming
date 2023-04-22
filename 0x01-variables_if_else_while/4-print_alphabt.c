@@ -1,16 +1,17 @@
 #include <stdio.h>
 /**
-*Main - prints alphabets in lowercasee and accept q + p and c
+*main - prints the alphabets in lowercase
+*followed by a new line, except q and e
 *Returns: Always 0 (success)
 */
 int main(void)
 {
-	char lowerAlph;
+	char lcase;
 
-	for (lowerAlph = 'a'; lowerAlph <= 'z';	lowerAlph++)
+	for (lcase 'a'; lcase <= 'z'; lcase++)
 	{
-		if (lowerAlph != 'e' && lowerAlph != 'q')
-			putchar(lowerAlph);
+		if (lcase != 'e' && lcase != 'q')
+			putchar(lcase);
 	}
 	putchar('\n');
 	return (0);
