@@ -8,7 +8,7 @@ int main(void)
 {
 	char lcase;
 
-	for (lcase 'a'; lcase <= 'z'; lcase++)
+	for (lcase = 'a'; lcase <= 'z'; lcase++)
 	{
 		if (lcase != 'e' && lcase != 'q')
 			putchar(lcase);
