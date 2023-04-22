@@ -1,37 +1,24 @@
-#include <stdio.h>
 /**
-*main - program entry point
-*Return: Always 0 (success)
-*/
+ * main - Entry point*
+ * Return: Always 0 (Success)
+ */
+
 int main(void)
 {
-	int i, k = '0', j;
+	int d1, d2;
 	
-	for (i = '0'; i <= '9'; i++)
+	for (d1 = 0; d1 < 9; d++)
 	{
-		for (j = k; j <= '9'; j++)
+		for (d2 = d1 + 1; d2 < 10; d2++)
 		{
-			if (i != j)
-			{
-				putchar(i);
-				putchar(j);
-			}
-			if (i == j)
-			{
+			putchar((d1 % 10) + '0');
+			putchar((d2 % 10) + '0');
+			if (d1 == 8 && d2 == 9)
 				continue;
-			}
-			if (i == '8' && j == '9')
-			{
-				break;
-			}
-			else
-			{
-				putchar(',');
-				putchar(' ');
-			}
-			k++;
+			putchar(',');
+			putchar(' ');
 		}
-		putchar('\n');
-		return (0);
 	}
+	putchar('\n');
+	return (0);
 }
