@@ -1,17 +1,18 @@
 #include <stdio.h>
 /**
- * main-program entry point.
- * Return: 0 if no error, non zero if error.
- */
+*main - prints numbers in base 16
+*Return: 0 if no error, non zero if error.
+*/
 int main(void)
 {
-        int i;
+	int i;
+	char hexvals;
 
-        char hexvals[] = "0123456789abcdef";
-        for (i = 0; i < 16; i++)
-        {
-                putchar(hexvals[i]);
-        }
-        putchar('\n');
-        return (0);
+	for (i =0; i < 10; i++)
+		putchar((i % 10) + '0');
+
+	for (hexvals = 'a'; hexvals <= 'f'; hexvals++)
+		putchar(hexvals);
+	putchar('\n');
+	return (0);
 }
