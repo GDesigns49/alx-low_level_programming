@@ -1,13 +1,14 @@
 #include <stdio.h>
 /**
- * main - prints digits in base 10
- * Return; Always 0 (succes)
+ * main - prints single  digits in base 10
+ * Return: Always 0 (succes)
  */
 int main(void)
 {
-	int val;
+	int num;
 
-	for (val = 0; val < 10; val++)
-		putchar('\n');
-		return (0);
+	for (num = 0; num < 10; num++)
+		putchar((num % 10) + '0');
+	putchar('\n');
+	return (0);
 }
