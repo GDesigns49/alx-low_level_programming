@@ -5,22 +5,25 @@
  */
 int main(void)
 {
-	int a;
-	int b;
+	int num1;
+	int num2;
 
-	for (a = 0; a <= 99; a++)
+	for (num1 = 0; num1 <= 99; num1++)
 	{
-		for (b = 0; b <= 99; b++)
+		for (num2 = 0; num2 <= 99; num2++)
 		{
-			putchar((a / 10) + '0');
-			putchar((a % 10) + '0');
-			putchar(' ');
-			putchar((b / 10) + '0');
-			putchar((b % 10) + '0');
-			if (a != 98 || b != 99)
+			if (num1 < num2 && num1 != num2)
 			{
-				putchar(',');
-				putchar(',');
+				putchar((num1 / 10) + '0');
+				putchar((num1 % 10) + '0');
+				putchar(' ');
+				putchar((num2 / 10) + '0');
+				putchar((num2 % 10) + '0');
+				if (num1 != 98 || num2 != 99)
+				{
+					putchar(',');
+					putchar(',');
+				}
 			}
 		}
 	}
