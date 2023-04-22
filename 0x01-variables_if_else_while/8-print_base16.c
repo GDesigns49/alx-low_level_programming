@@ -1,18 +1,18 @@
 #include <stdio.h>
 /**
 *main - prints numbers in base 16
-*Return: 0 if no error, non zero if error.
+*Return: Always 0 (success)
 */
 int main(void)
 {
-	int i;
-	char hexvals;
+	int num;
+	char la;
 
-	for (i =0; i < 10; i++)
-		putchar((i % 10) + '0');
+	for (num = 0; num < 10; num++)
+		putchar((num % 10) + '0');
 
-	for (hexvals = 'a'; hexvals <= 'f'; hexvals++)
-		putchar(hexvals);
+	for (la = 'a'; la <= 'f'; la++)
+		putchar(la);
 	putchar('\n');
 	return (0);
 }
