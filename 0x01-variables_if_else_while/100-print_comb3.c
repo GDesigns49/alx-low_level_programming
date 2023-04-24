@@ -8,7 +8,7 @@ int main(void)
 {
 	int num1 = 48;
 	int num2 = 49;
-	int seperator = 44;
+	int separator = 44;
 	int nl = 57;
 	int sp = 32;
 
@@ -20,7 +20,7 @@ int main(void)
 			putchar(num2);
 			if (num1 != 56 || num2 != 57)
 			{
-					putchar(sp);
+					putchar(separator);
 					putchar(sp);
 			}
 		}
