@@ -20,11 +20,10 @@ int main(void)
 			putchar(num2);
 			if (num1 != 56 || num2 != 57)
 			{
-					putchar(separator);
-					putchar(sp);
+				putchar(separator);
+				putchar(sp);
 			}
 		}
 	}
-	putchar('\n');
 	return (0);
 }
