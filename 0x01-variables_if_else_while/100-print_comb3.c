@@ -6,21 +6,22 @@
 
 int main(void)
 {
-	int x, y;
+	int num1 = 48;
+	int num2 = 49;
+	int seperator = 44;
+	int nl = 57;
+	int sp = 32;
 
-	for (x = 48; x <= 56; x++)
+	for (num1 = 48; num1 < nl; num1++)
 	{
-		for (y = 49; y <= 57; y++)
+		for (num2 = num1 + 1; num2 < nl; num2++)
 		{
-			if (y > x && x != y)
+			putchar(num1);
+			putchar(num2);
+			if (num1 != 56 || num2 != 57)
 			{
-				putchar(x);
-				putchar(y);
-				if (x != 56 || y != 57)
-				{
-					putchar(',');
-					putchar(',');
-				}
+					putchar(sp);
+					putchar(sp);
 			}
 		}
 	}
