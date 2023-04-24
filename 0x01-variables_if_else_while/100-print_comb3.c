@@ -14,7 +14,7 @@ int main(void)
 
 	for (num1 = 48; num1 < nl; num1++)
 	{
-		for (num2 = (num1 + 1); num2 < (nl + )1; num2++)
+		for (num2 = (num1 + 1); num2 < (nl + 1); num2++)
 		{
 			putchar(num1);
 			putchar(num2);
