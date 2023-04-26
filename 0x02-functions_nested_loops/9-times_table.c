@@ -1,7 +1,6 @@
 #include "main.h"
-
 /**
- * times_table - prints the 9 times table
+ * times_table - prints the 9 times table, starting with 0
  */
 void times_table(void)
 {
@@ -16,9 +15,8 @@ void times_table(void)
 			prod = num * mult;
 			if (mult == 0)
 			{
-			_putchar(prod + '0');
+				_putchar(prod + '0');
 			}
-
 			if (prod < 10 && mult != 0)
 			{
 				_putchar(',');
@@ -34,6 +32,6 @@ void times_table(void)
 				_putchar((prod % 10) + '0');
 			}
 		}
+		_putchar('\n');
 	}
-	_putchar('\n');
 }
