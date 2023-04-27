@@ -14,10 +14,9 @@ int main(void)
 	long int n;
 	long int max;
 	long int i;
-	
+
 	n = 612852475143;
-	max = -1;
-	
+	max = -61;
 	while (n % 2 == 0)
 	{
 		max = 2;
