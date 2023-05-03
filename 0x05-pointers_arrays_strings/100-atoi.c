@@ -8,14 +8,7 @@
 
 int _atoi(char *s)
 {
-	int x, y, z, len, f, d;
-
-	x = 0;
-	y = 0;
-	z = 0;
-	len = 0;
-	f = 0;
-	d = 0;
+	int x = 0, y = 0, z = 0, len = 0, f = 0, d = 0;
 
 	while (s[len] != '\0')
 		len++;
@@ -36,5 +29,8 @@ int _atoi(char *s)
 	}
 	if (f == 0)
 		return (0);
-	return (x);
+	if (y % 2 == 0)
+	return (z);
+	else
+		return (-z);
 }
