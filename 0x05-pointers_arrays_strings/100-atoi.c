@@ -19,7 +19,9 @@ int _atoi(char *s)
 		if (s[x] >= '0' && s[x] <= '9')
 		{
 			d = s[x] - '0';
-			z = z * 10 + d;
+			if (d % 2)
+			d = -d;
+			x = x * 10 + d;
 			f = 1;
 			if (s[x + 1] < '0' || s[x + 1] > '9')
 				break;
@@ -29,8 +31,5 @@ int _atoi(char *s)
 	}
 	if (f == 0)
 		return (0);
-	if (y % 2 == 0)
-	return (z);
-	else
-		return (-z);
+	return (x);
 }
